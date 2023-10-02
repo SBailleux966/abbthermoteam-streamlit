@@ -15,6 +15,7 @@
 import streamlit as st
 from streamlit.logger import get_logger
 
+
 LOGGER = get_logger(__name__)
 
 
@@ -24,7 +25,7 @@ def run():
         page_icon="👋",
     )
 
-    st.write("# Welcome to Streamlit! 👋")
+    st.write("# :balloon: Welcome to Streamlit! 👋")
 
     st.sidebar.success("Select a demo above.")
 
@@ -49,3 +50,13 @@ def run():
 
 if __name__ == "__main__":
     run()
+    import matplotlib.pyplot as plt
+    
+    import pandas as pd
+    df = pd.DataFrame({
+      'first column': [1, 2, 3, 4],
+      'second column': [10, 20, 30, 40]
+    })
+
+    df
+    plt.plot([1,2])
